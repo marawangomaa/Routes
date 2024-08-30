@@ -1,0 +1,22 @@
+/* .star::after{
+    content: '';
+    width: 90px;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+.star::before{
+    content: '';
+    width: 90px;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+
+} */

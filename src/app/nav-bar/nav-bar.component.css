@@ -1,0 +1,11 @@
+:root{
+    color: #fff !important;
+}
+nav{
+    transition: all 0.5s;
+}
+.active{
+    background-color: #1abc9c !important;
+    border-radius: 7px !important;
+    
+}

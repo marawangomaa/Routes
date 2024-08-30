@@ -1,0 +1,20 @@
+<div class="portfolio d-flex flex-column text-center justify-content-center align-content-center p-5">
+    <h2>PORTFOLIO COMPONENT</h2>
+    <app-star2></app-star2>
+    <div class="imgs d-flex justify-content-center align-content-center flex-wrap">
+        @for (src of imgs; track $index) {
+            <div class="img col-lg-4 col-md-6 p-3">
+                <div class="inner">
+                    <div (click)="flag=false; srcImg=src" class="cover d-flex justify-content-center align-content-center position-absolute text-center w-100 h-100 rounded-3">
+                        <i class="fa-solid fa-plus fa-6x m-auto text-white"></i>
+                    </div>
+                    <img [src]="src" class="rounded-3 w-100" alt="poert1">
+                </div>
+            </div>
+        }
+
+        <div (click)="hideimg($event.target, img)" [class.d-none]="flag" class="imgShow position-fixed w-100 h-100 z-3 justify-content-center align-content-center start-0 top-0 bg-info bg-opacity-50">
+            <img #img [src]="srcImg" alt="" width="550" class="rounded-4">
+        </div>
+    </div>
+</div>
